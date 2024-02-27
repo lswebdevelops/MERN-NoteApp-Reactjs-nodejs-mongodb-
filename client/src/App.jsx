@@ -4,6 +4,7 @@ import About from "./routes/About/about";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AddNote from "./routes/Home/add-note";
+import UpdateNote from "./routes/Home/note";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/add-note" element={<AddNote />} />
-
+          <Route path="/note/:id" element={<UpdateNote />} />
           <Route path="/about" element={<About />} />
         </Routes>
         <Footer />
